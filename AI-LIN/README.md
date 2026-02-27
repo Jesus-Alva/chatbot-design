@@ -52,7 +52,7 @@ Docker y Docker Compose instalados.
 
 ``` 
 # Clona el repositorio (si no lo has hecho)
-git clone https://github.com/Jesus-Alva/chatbot-design.git
+git clone https://github.com/Jesus-Alva/chatbot.git
 cd chatbot-design/backend
 
 # Construye y levanta los contenedores

@@ -1,6 +1,6 @@
 {
   "name": "chatbot-ai-lin",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "type": "module",
   "description": "Widget de chat para conectar con un servidor Rasa",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jesus-Alva/chatbot-design.git"
+    "url": "https://github.com/Jesus-Alva/chatbot.git"
   },
   "style": "dist/styles.css",
   "peerDependencies": {
