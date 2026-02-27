@@ -1,0 +1,52 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - afirmar
+  - negar
+  - preguntar_horarios
+  - preguntar_ubicacion
+  - preguntar_disponibilidad
+  - preguntar_costos
+  - reservar
+  - faq
+
+entities:
+  - servicio
+  - fecha
+  - lugar
+
+slots:
+  servicio:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: servicio
+  fecha:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: fecha
+  lugar:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: lugar
+
+responses:
+  utter_saludo:
+    - text: "¡Hola! ¿En qué puedo ayudarte?"
+  utter_despedida:
+    - text: "¡Hasta luego!"
+  utter_preguntar_horarios:
+    - text: "Los horarios de {servicio} son de 9:00 a 18:00."
+  utter_preguntar_ubicacion:
+    - text: "Estamos en {lugar}."
+  utter_fallo:
+    - text: "Lo siento, no entendí. ¿Puedes reformularlo?"
+
+actions:
+  - action_consultar_disponibilidad
+  - action_consultar_costo
+  - action_realizar_reserva

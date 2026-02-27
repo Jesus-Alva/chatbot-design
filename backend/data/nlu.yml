@@ -1,0 +1,31 @@
+version: "3.1"
+nlu:
+  - intent: saludo
+    examples: |
+      - hola
+      - buenos días
+      - qué tal
+
+  - intent: preguntar_horarios
+    examples: |
+      - ¿A qué hora abren?
+      - ¿Cuál es el horario del museo?
+      - horarios de [hotel](servicio)
+
+  - intent: preguntar_ubicacion
+    examples: |
+      - ¿Dónde están ubicados?
+      - dirección del [parque](servicio)
+      - [lugar](lugar)
+
+  - intent: preguntar_disponibilidad
+    examples: |
+      - ¿Hay habitaciones para [mañana](fecha)?
+      - disponibilidad de vuelos a [Madrid](lugar)
+      - ¿Está disponible el [restaurante](servicio) el [viernes](fecha)?
+
+  - intent: faq
+    examples: |
+      - ¿Aceptan mascotas?
+      - ¿Hay wifi gratis?
+      - ¿Cómo puedo cancelar mi reserva?

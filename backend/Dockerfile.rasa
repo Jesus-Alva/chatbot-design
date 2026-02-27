@@ -1,0 +1,12 @@
+FROM rasa/rasa:3.6.1-full
+
+WORKDIR /app
+
+COPY . /app
+
+USER root
+RUN pip install --no-cache-dir -r actions/requirements.txt
+
+USER 1001
+
+CMD ["run", "--enable-api", "--cors", "*", "--debug"]

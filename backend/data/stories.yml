@@ -1,0 +1,8 @@
+version: "3.1"
+stories:
+  - story: consultar disponibilidad y reservar
+    steps:
+      - intent: preguntar_disponibilidad
+      - action: action_consultar_disponibilidad
+      - intent: afirmar
+      - action: action_realizar_reserva

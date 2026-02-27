@@ -1,0 +1,29 @@
+{
+  "name": "chatbot-ai-lin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Widget de chat para conectar con un servidor Rasa",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jesus-Alva/chat-ai-lin.git"
+  },
+  "license": "MIT",
+  "style": "dist/styles.css",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.22.5",
+    "rollup": "^3.29.4",
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
+}
