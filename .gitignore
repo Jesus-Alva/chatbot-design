@@ -1,0 +1,64 @@
+# Dependencias de Node.js
+node_modules/
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de compilación y distribución del paquete npm
+dist/
+lib/
+build/
+*.tgz
+*.zip
+
+# Python (backend Rasa)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Rasa (modelos y caché)
+models/
+.rasa/
+
+# Logs y bases de datos
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.sqlite
+*.db
+
+# Archivos de entorno (credenciales)
+.env
+.env.local
+.env.*.local
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Directorios de editores/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales y de respaldo
+.temp
+.cache
+*.tmp
+*.bak
+*.orig
+
+# Otros archivos específicos de tu proyecto (ajusta según necesites)
+estructura.txt

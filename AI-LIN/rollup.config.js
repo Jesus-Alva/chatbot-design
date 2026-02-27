@@ -19,16 +19,20 @@ export default {
     },
   ],
   plugins: [
-    resolve(),
+    resolve({
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+    }),
     commonjs(),
     babel({
       babelHelpers: 'bundled',
       presets: ['@babel/preset-react'],
       exclude: 'node_modules/**',
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
     }),
     postcss({
       plugins: [tailwindcss('./tailwind.config.js'), autoprefixer],
-      extract: 'dist/styles.css', // Genera un CSS separado
+      extract: 'dist/styles.css',
+      minimize: true,
     }),
   ],
   external: ['react', 'react-dom'],
