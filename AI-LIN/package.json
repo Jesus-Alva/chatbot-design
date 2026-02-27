@@ -1,6 +1,6 @@
 {
   "name": "chatbot-ai-lin",
-  "version": "1.0.0",
+  "version": "2.0.4",
   "type": "module",
   "description": "Widget de chat para conectar con un servidor Rasa",
   "main": "dist/index.js",
